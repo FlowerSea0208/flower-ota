@@ -1,12 +1,12 @@
 {
 	"response": [
 	  {
-		"datetime": 1689449347,
-		"filename": "lineage-20.0-20230715-UNOFFICIAL-mars.zip",
-		"id": "7448c66617a1600e9f2e9aa33739e35a81b55d87f13dc7c1ab07f3df70889d61",
+		"datetime": 1692256586,
+		"filename": "lineage-20.0-20230817-UNOFFICIAL-mars.zip",
+		"id": "0fb45de594aecb2228fa933ec1637ecf57df9349b19fa721cbe36be30c7d200e",
 		"romtype": "UNOFFICIAL",
-		"size": 1516986400,
-		"url": "https://github.com/FlowerSea0208/flower-ota/releases/download/mars-20-230716/lineage-20.0-20230715-UNOFFICIAL-mars.zip",
+		"size": 1518391694,
+		"url": "https://github.com/FlowerSea0208/flower-ota/releases/download/mars-20-230817/lineage-20.0-20230817-UNOFFICIAL-mars.zip",
 		"version": "20.0"
 	  }
 	]
