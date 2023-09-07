@@ -1,0 +1,13 @@
+{
+	"response": [
+	  {
+		"datetime": 1694082971,
+		"filename": "lineage-20.0-20230907-UNOFFICIAL-odin.zip",
+		"id": "c87bc7975fbb1ab8c926444774052ddc7dd0463bcf913a2b123c9256b5ce8bba",
+		"romtype": "UNOFFICIAL",
+		"size": 1484197800,
+		"url": "https://github.com/FlowerSea0208/flower-ota/releases/download/odin-20-230907/lineage-20.0-20230907-UNOFFICIAL-odin.zip",
+		"version": "20.0"
+	  }
+	]
+  }
