@@ -1,12 +1,12 @@
 {
 	"response": [
 	  {
-		"datetime": 1692585109,
-		"filename": "lineage-20.0-20230821-UNOFFICIAL-star.zip",
-		"id": "1e66a91735bd85092001d8c43764e04142faa239a22c618c6e78eccff2a60305",
+		"datetime": 1694394571,
+		"filename": "lineage-20.0-20230911-UNOFFICIAL-star.zip",
+		"id": "1e288255280a2d0090a769a4073884f5ba21124835ca6a9ae7d89770274c0a6a",
 		"romtype": "UNOFFICIAL",
-		"size": 1518803595,
-		"url": "https://github.com/FlowerSea0208/flower-ota/releases/download/star-20-230821/lineage-20.0-20230821-UNOFFICIAL-star.zip",
+		"size": 1517645133,
+		"url": "https://github.com/FlowerSea0208/flower-ota/releases/download/star-20-230911/lineage-20.0-20230911-UNOFFICIAL-star.zip",
 		"version": "20.0"
 	  }
 	]
