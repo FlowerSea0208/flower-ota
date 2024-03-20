@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": 1710915083,
+      "filename": "lineage-21.0-20240320-UNOFFICIAL-mars.zip",
+      "id": "eb8593f88a55036654c908c1494f8e6f6728a690fa1d3a906aa1ece3ec1a1e8b",
+      "romtype": "UNOFFICIAL",
+      "size": 1570251453,
+      "url": "https://git.mainlining.org/FlowerSea0208/flower-ota/raw/branch/lineage-21/mars-21.0-20240320/lineage-21.0-20240320-UNOFFICIAL-mars.zip",
+      "version": "21.0"
+    }
+  ]
+}
