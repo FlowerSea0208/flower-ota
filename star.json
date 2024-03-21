@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": 1710968037,
+      "filename": "lineage-21.0-20240320-UNOFFICIAL-star.zip",
+      "id": "be17465e6549522d8535ab046a3547b320f722b19445dcb560755cf214752295",
+      "romtype": "UNOFFICIAL",
+      "size": 1570251367,
+      "url": "https://git.mainlining.org/FlowerSea0208/flower-ota/raw/branch/lineage-21/star-21.0-20240320/lineage-21.0-20240320-UNOFFICIAL-star.zip",
+      "version": "21.0"
+    }
+  ]
+}

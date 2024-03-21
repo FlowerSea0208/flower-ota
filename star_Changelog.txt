@@ -1,0 +1,590 @@
+====================
+     03-21-2024
+====================
+
+   * kernel/xiaomi/sm8350
+dca9556007e3 arm64: dts: star: Disable rear display
+
+====================
+     03-20-2024
+====================
+
+   * device/xiaomi/sm8450-common
+1cd6a1d sm8450-common: udfps: Enforce high brightness while enrolling
+880093b sm8450-common: Add debug IMS props to workaround CarrierConfig restrictions
+9215cdb sm8450-common: config: Update sf duration to 15.6 ms
+0971d7f sm8450-common: config: Move from phase offsets to work durations
+573195b sm8450-common: udfps: Don't try to read with a negative length
+705b60c sm8450-common: udfps: Enable fod_status on finger down events instead for fpc_fod
+a69ce12 sm8450-common: Add support for thor
+3c0204b sm8450-common: udfps: Disable HBM directly on successfull authentication
+c4781d1 sm8450-common: overlay: Decommonize brightness overlays
+2ab727a sm8450-common: udfps: Change verbose logging to DEBUG
+1c5b35a sm8450-common: udfps: Inform hwmodule about press coordinates
+43650d1 sm8450-common: udfps: Use 110 nit fod when the brightness is low
+9b37d1a sm8450-common: udfps: Add comments about setFingerDown usage
+ed1d014 sm8450-common: udfps: Drop unnecessary setFingerDown on cancel
+1198676 sm8450-common: udfps: Defer extCmd until fod ui is ready
+abee51e sm8450-common: udfps: Move HBM requests to fod press status listener
+44edf47 sm8450-common: udfps: Correct vendorCodes
+6cfbe86 sm8450-common: udfps: Improve fod press poll logging
+5588bbf sm8450-common: udfps: Use MI_DISP_PRIMARY as touch id
+1328eab sm8450-common: udfps: Enable HBM via disp_feature
+ec8786c sm8450-common: udfps: Keep fod_status enabled during enroll
+b2dcc1e sm8450-common: sepolicy: Add rules for fpc fod
+bba13b5 sm8450-common: Set radio build profile to u-stable
+1875e9b sm8450-common: Enable radio ecc_cloud
+f2b2c87 sm8450-common: Enable TDES support when Keymaster 4.0 is enabled
+14bf873 sm8450-common: display: Set debug.sf.auto_latch_unsignaled to 0
+189e6a3 sm8450-common: Disable frame rate override feature
+e0ab3da sm8450-common: Disable redir_party_num
+e8c54c4 sm8450-common: Pin hotword blobs from global rom
+f45cab5 sm8450-common: sepolicy: Relax xiaomi camera postproc rules
+b400ebb sm8450-common: Add support for mayfly
+54a931f sm8450-common: overlay: Enable burn in protection
+ccf482a sm8450-common: Move default network property to vendor partition
+6f4d568 sm8450-common: Enable usage of dex2oat64
+efab1ce sm8450-common: overlay: Drop MMS user agent overlays
+ef8b610 sm8450-common: overlay: Unpin updatable-media from memory
+f255e55 sm8450-common: overlay: Remove odex/oat files from pinner list
+2fc31b9 sm8450-common: overlay: Update SurfaceFlinger pin on all targets
+e2d0eff sm8450-common: overlay: Set shutdown battery temperature
+6053321 sm8450-common: overlay: Update from unicorn V816.0.3.0.ULECNXM
+3e6614b sm8450-common: overlay: Add WifiResTarget_cape
+6b2c1b3 sm8450-common: overlay: Import xiaomi wifi changes for taro
+85d6f16 sm8450-common: overlay: Restrict WifiResTarget to taro
+341bfea sm8450-common: Build Lineage Health HAL
+8c6add2 sm8450-common: Build Lineage PowerShare HAL
+dc9bdf5 sm8450-common: Decommonize goodix_fod.ko
+a49e28c sm8450-common: Address marble denials
+e6fb9bb sm8450-common: Address marble fingerprint denials
+6d71711 sm8450-common: Allow choosing NFC supported SKUs
+28fe79f sm8450-common: keylayout: Disable single tap on fingerprint sensor
+5062340 sm8450-common: Import fingerprint sensor keylayouts from marble V14.0.9.0.TMREUXM
+a0e5dbb sm8450-common: hidl: Add fingerprint extension HAL
+f9ec3dc sm8450-common: rootdir: Set more fingerprint permissions
+8185530 sm8450-common: Decommonize cit sensors
+9a110f0 sm8450-common: Drop goodix_core.ko kernel module
+d16e2b4 sm8450-common: Patch citsensorservice to work with OSS libdisplayconfig.qti
+37cc6f3 sm8450-common: Update QtiTelephony and ims from unicorn V816.0.3.0.ULECNXM
+3959dbf sm8450-common: Unpin display blobs
+2080c61 sm8450-common: Decommonize libQnnHtpAltPrepV69Stub.so
+5334ed1 sm8450-common: gps: Reorder initialization lists again
+f518e7e sm8450-common: gps: Update to LA.VENDOR.1.0.r1-21900-WAIPIO.0
+36c5587 sm8450-common: vintf: update IImsFactory HAL
+3ce1e37 sm8450-common: Update blobs from unicorn V816.0.3.0.ULECNXM
+3e2b958 sm8450-common: gpt-utils: Check ufs device first before checking partition names
+fefc409 sm8450-common: gpt-utils: Address the warnings
+c6f0e6b sm8450-common: Stop building cameralog.ko
+e2499f7 sm8450-common: Fix qcacld-3.0 module path
+660f174 sm8450-common: Update makefile to use the AIDL Wifi Vendor HAL.
+9b96082 sm8450-common: Build libprotobuf-cpp-lite-3.9.1-vendorcompat
+9cc7db0 sm8450-common: Build 1.4 drm interface to vendor
+0b604f6 sm8450-common: Disable telephony injection for now
+3366f4a sm8450-common: Add security.rkp-V3 dependency to keymint service
+cc77d18 sm8450-common: Use the common device compatibility matrix from QCOM
+bbce01c sm8450-common: Allow extracting only firmware images
+287048e sm8450-common: Add firmware extraction support
+9dc0c1f sm8450-common: Inherit common partition reserved sizes
+bc979cb sm8450-common: audio: Nuke unsupported haptics output configuration
+7a9ef94 sm8450-common: Use FUSE passthrough by default
+817ee62 sm8450-common: Remove some camera-daemon commands
+2d6f07b sm8450-common: Move to QTI health AIDL service
+b07068f sm8450-common: Migrate to AIDL ClearKey DRM HAL
+c429f74 sm8450-common: Add prebuilt protobuf 3.9.1 to vendor partition.
+6bfd292 sm8450-common: gps: Fix compilation on U
+f769395 sm8450-common: Reserve some space on system partitions
+cb98749 sm8450-common: Import QCC system_ext blobs
+91e0446 sm8450-common: Add qcc-trd back
+67c1569 sm8450-common: Drop oss lmkd libs
+8dd7e6a sm8450-common: Build qcom soundfx effects from source
+d09df83 sm8450-common: Drop proprietary libdrmutils
+d6c9503 sm8450-common: Build qti thermal HAL from source
+d6d8afa sm8450-common: Cleanup media section and build oss ones
+0cefa8d sm8450-common: Reorder and cleanup some blobs
+e9c724f sm8450-common: sepolicy: Drop label of wlan_mac.bin in persist
+b9f9cf2 sm8450-common: sepolicy: Reduce mi_thermald permissions in sysfs
+f38ee92 sm8450-common: sepolicy: Grant audio hal permissions on persist audio files
+0907c59 sm8450-common: Build sensorsservice interface for vendor blobs
+d47704f sm8450-common: Decommonize audio HAL completely
+85ffa05 sm8450-common: Copy audio configs and sensor permissions to all supported sku's and cleanup cape sensors
+8453ef4 sm8450-common: Decommonize mixer_paths and move some configs to vendor repo
+2bd79ee sm8450-common: Decommonize AGM
+55c3480 sm8450-common: Decommonize touch_report
+17a09cc sm8450-common: Cleanup audio properties again
+0a00ab8 sm8450-common: Remove system wifi properties
+7bfc345 sm8450-common: Cleanup wfd properties
+8b7dde1 sm8450-common: Don't enable ramdumps
+a75e1eb sm8450-common: Drop unused sytem NFC property
+14c3ba4 sm8450-common: Cleanup media properties
+993d86f sm8450-common: Cleanup system graphics properties
+84bb690 sm8450-common: Update dpm property
+8683899 sm8450-common: Drop persist.vendor.radio.hidl_dev_service
+804358f sm8450-common: Drop zygote critical window property
+27f6320 sm8450-common: Cleanup wifi properties
+7657f46 sm8450-common: Cleanup vcb properties
+4e1ddaa sm8450-common: Drop default usb config from vendor.prop
+23f69da sm8450-common: Cleanup radio properties
+9bd8816 sm8450-common: Drop QSPM property
+57fba76 sm8450-common: Drop QFP property
+5ce1a28 sm8450-common: Don't enable qcomsysd
+bb678c7 sm8450-common: Cleanup perf properties
+2be8dea sm8450-common: Drop NFC properties
+84adac3 sm8450-common: Drop shutdown waittime property
+05a2c70 sm8450-common: Cleanup media properties
+800bc6c sm8450-common: Drop LMK properties
+30f9ba5 sm8450-common: Drop miui haptics properties
+795e1cc sm8450-common: Cleanup graphics properties
+cb9c073 sm8450-common: Add fm property to bluetooth section
+3f2bef5 sm8450-common: Drop fingeprint properties
+00cff6e sm8450-common: Cleanup display properties
+56e1819 sm8450-common: Cleanup camera properties
+c01f55e sm8450-common: Clean bluetooth properties up
+ae50a6a sm8450-common: Cleanup audio properties
+02aa012 sm8450-common: Disable dolby audio and vision features
+f77ee2a sm8450-common: Update audio properties from V14.0.11.0.TLECNXM
+c112334 sm8450-common: Implement xtra-daemon control via property
+470383b sm8450-common: gps: Lower debug level
+aff1989 sm8450-common: gps: Disable xtwifi location services
+73e615c sm8450-common: Build GNSS HAL from source and import proprietary configs from V14.0.11.0.TLECNXM
+505727c sm8450-common: gps: Remove all Wno-error flags
+9ef4c82 sm8450-common: gps: Implement list empty error code for msg_q
+472e7d9 sm8450-common: gps: Address logical-op-parentheses warning
+2117624 sm8450-common: gps: Reorder initializations list to satisfy warnings
+3094f39 sm8450-common: gps: Resolve unused parameter warnings
+946f365 sm8450-common: gps: Let qualityLevelAccepted use loc_sess_status enum
+fdb5c2a sm8450-common: gps: Move qualityLevelAccepted field into LocationOptions
+9978d98 sm8450-common: gps: HAL: Fix compile errors for Wunused-function and Wformat
+cd7a05c sm8450-common: gps: HAL: Location compilation bringup for wearables
+8ab15e7 sm8450-common: gps: Fix -Wbitwise-instead-of-logical
+12be252 sm8450-common: gps: Remove ndk_platform backend. Use the ndk backend.
+2d837bc sm8450-common: gps: Fix non-ASCII character in gps.conf
+b9fdaff sm8450-common: Import gps from LA.VENDOR.1.0.r1-12800-WAIPIO.0
+106355e sm8450-common: Drop mfidoca, mtd- and tidaservice
+8d24a26 sm8450-common: Drop sla
+30c8d6c sm8450-common: sepolicy: Overall cleanup
+14be88a sm8450-common: sepolicy: Cleanup dolby related policies
+6e6cb23 sm8450-common: sepolicy: Cleanup displayfeature related policies
+27b20a7 sm8450-common: sepolicy: Drop ddr training rules
+e68f771 sm8450-common: Add exclusion for vendor ELF prebuilts
+a98cafe sm8450-common: Mark as having overridden commands
+ac88d86 sm8450-common: Build qti systemhelper interface
+86832ec sm8450-common: Build more qti camera interfaces to vendor
+7a8cc78 sm8450-common: Go away Megvii
+17318c1 sm8450-common: Kang display blobs from eqs
+b49c761 sm8450-common: Drop dolby music blobs
+3edb73f sm8450-common: vintf: Drop qti factory HAL
+761e3fe sm8450-common: Switch to unified supplicant service rc entry
+bf1d427 sm8450-common: Switch to generic cpu variant
+60f3b13 sm8450-common: Decommonize regulator, touch, haptics and audio kernel modules
+cfbd20f sm8450-common: Update kernel modules for unicorn
+5a49bb0 sm8450-common: Extract from unicorn
+731113a sm8450-common: Decommonize sensor configs
+89fae16 sm8450-common: Decommonize ADSP modules
+4fe9052 sm8450-common: Add support for unicorn
+2e2859f sm8450-common: Import proprietary files listing
+caac0ea sm8450-common: Build and enable fastbootd
+cfabb12 sm8450-common: Copy media configs
+642d233 sm8450-common: Build display HAL
+d9d3600 sm8450-common: Build fingeprint HAL and implement udfpshandler
+31a8fa9 sm8450-common: overlay: Enable multiple vibration strength levels support
+b0c0c31 sm8450-common: Build libqti_vndfwk_detect.vendor
+6ed022e sm8450-common: sepolicy: Update from mondrian V14.0.5.0.TMNMIXM
+d921c96 sm8450-common: Configure kernel build
+ab6d056 sm8450-common: Add mixer_paths_ukee_mtp.xml from marble V14.0.9.0.TMREUXM
+e71cc53 sm8450-common: Copy audio configs to sku_ukee too
+f33df3e sm8450-common: Add support for marble
+f52225c sm8450-common: Copy audio configs to sku_cape too
+ab6d299 sm8450-common: Add support for mondrian
+41eb2e5 sm8450-common: Enable camera override format from reserved
+3f91949 sm8450-common: Add hotword enrollment permissions
+1b19def sm8450-common: Build libvolumelistener from source
+8da6db6 sm8450-common: Set display board flags
+fa9a640 sm8450-common: Build libchrome from source
+5307b24 sm8450-common: Import missing graphics properties from zeus V14.0.7.0.TLBMIXM
+049fadb sm8450-common: Build common QTI vibrator HAL
+3864cf8 sm8450-common: overlay: Remove "SIM x is HD capable" message
+adec2e2 sm8450-common: overlay: Enable call recording
+19201de sm8450-common: sepolicy: Add new fingerprint rules
+668f7f3 sm8450-common: sepolicy: Add policy for touch_report
+6fc24b0 sm8450-common: audio: Decommonize static mixer paths overlay and resourcemanager
+80f50b9 sm8450-common: Decommonize mod_device property
+18c9d03 sm8450-common: Fix user builds
+16cebf3 sm8450-common: overlay: Pulse doze on pickup
+3ebc100 sm8450-common: Enable zygote critical window
+e84cb30 sm8450-common: Enable set channel on NDP setup
+bad5426 sm8450-common: wifi: Configure correct overlay configuration.
+2bdd705 sm8450-common: Move BT profiles props to vendor
+4e07d3a sm8450-common: Remove unused persist.bluetooth.a2dp_offload.cap property
+f964ff2 sm8450-common: Redefine bluetooth a2dp offload capabilities
+1e7c526 sm8450-common: Add Bluetooth power overlays to sysprops
+4384f4e sm8450-common: Remove A2DP input module in audio policy configuration
+73270a0 sm8450-common: audio: Enable AOSP bluetooth audio HAL v2
+bd85081 sm8450-common: sepolicy: Allow IR HAL to r/w ir_spi
+83ac723 sm8450-common: sepolicy: Label camera libs as same process hal files
+480d6a6 sm8450-common: sepolicy: Adjust permissions on displayfeature sysfs for fingerprint hal
+80a70b9 sm8450-common: sepolicy: Allow init to set more vendor properties
+4b95dd4 sm8450-common: Set audio flags
+37eea61 sm8450-common: Initial sepolicy
+fc509ec sm8450-common: Copy keystore app attest permission from fw/native
+1a7613c sm8450-common: Set board api level to 31
+782795c sm8450-common: Build IPACM_Filter_cfg.xml
+2be5cca sm8450-common: Provide android.hardware.neuralnetworks-V1-ndk_platform shim
+835df83 sm8450-common: Build hostapd 1.0 HIDL interface
+03d405a sm8450-common: Update audio configs from V13.0.4.0.TLCMIXM
+3113ff6 sm8450-common: Blob nxp interface
+e2efaeb sm8450-common: Switch BtAudio to AIDL
+512d9fd sm8450-common: Add ndk_platform aidl backends
+310f2bd sm8450-common: Set bluetooth profile properties
+39e4cab sm8450-common: Drop WfdCommon for now
+e28fcd9 sm8450-common: Add libdrm to vendor
+2b37029 sm8450-common: Add btconfigstore 1.0 interface to vendor
+b47a344 sm8450-common: Install libkeymaster_messages to vendor
+548139d sm8450-common: Build wfdaac_vendor
+b3449e5 sm8450-common: Build neural network aidl interface from source
+bfe6e38 sm8450-common: Build servicetracker interface from source
+4ac9d47 sm8450-common: Build perf interfaces from source
+1a8b75f sm8450-common: Build capabilityconfigstore from source
+7c0d7bd sm8450-common: Build vendor.nxp.hardware.nfc interface
+641a02d sm8450-common: Build fwk-detect from source
+a6a90ee sm8450-common: Build bluetooth interfaces from source
+53df181 sm8450-common: Build ANT+ interface from source
+91280b2 sm8450-common: Build vndservicemanager
+7423ad8 sm8450-common: Build more from source
+65f2b53 sm8450-common: Build WiFi hal from source
+1253ccd sm8450-common: Enable 64bit audio HAL
+011e31d sm8450-common: Build some AOSP services and interfaces from source
+03627df sm8450-common: Copy permissions from frameworks/native
+851c7a5 sm8450-common: Enable CNE feature
+16f11ee sm8450-common: Update telephony package list to LA.QSSI.12.0.r1-05600-qssi.0
+4fe360d sm8450-common: overlay: Enable double tap to wake support
+8f6c27c sm8450-common: Add power HAL extension and use xiaomi-touch to handle dt2w
+ee60275 sm8450-common: Build qti aidl power hal
+b404693 sm8450-common: Import audio configs
+f414b9c sm8450-common: Build xiaomi sensors multihal
+e578f20 sm8450-common: Build telephony packages and disable rild
+4c661bd sm8450-common: media: Update from V14.0.5.0.TMNMIXM
+57572a2 sm8450-common: media: Update from V14.0.3.0.TLCMIXM
+6b5a0a1 sm8450-common: media: Update from V13.0.4.0.TLCMIXM
+431ecb8 sm8450-common: Set ro.media.xml_variant.profiles to choose media profiles
+9b6c225 sm8450-common: Import media init scripts
+e01402f sm8450-common: Add properties from stock
+bac702f sm8450-common: rootdir: Enable mgame mi_thermald mode
+ce5d445 sm8450-common: rootdir: Add ultrasound socket to sensors hal
+7c587d3 sm8450-common: rootdir: Add oem_291 group and ultrasound socket to audio hal
+c7fc76b sm8450-common: rootdir: Add goodix fingerprint permissions
+a4395b9 sm8450-common: rootdir: Add mi display permissions to ueventd
+733ec1b sm8450-common: rootdir: Import xiaomi additions to seperate file
+427f5ac sm8450-common: rootdir: Check persist
+60894cb sm8450-common: rootdir: Add mbnota support
+973b08b sm8450-common: Add touch_report init script
+65d0066 sm8450-common: Reduce Telephony injections
+158eace sm8450-common: overlay: Decouple auto-suspend and interactive from display on/off
+f148f4d sm8450-common: overlay: Drop QTI UIM GBA package
+a017079 sm8450-common: overlay: Add automatic brightness config and enable by default
+cf521db sm8450-common: overlay: Add brightness levels
+07ad29a sm8450-common: overlay: Enable config_dozeAfterScreenOffByDefault
+959b908 sm8450-common: overlay: Import telephony_injection from LA.VENDOR.1.0.r1-15600-WAIPIO.0
+505221f sm8450-common: overlay: Import voice over cellular strings
+b3cc9df sm8450-common: overlay: Update Frameworks overlay from LA.VENDOR.1.0.r1-15600-WAIPIO.0
+e97facd sm8450-common: overlay: Checkout Frameworks overlay to LA.VENDOR.1.0.r1-13100-WAIPIO.0
+dd1a2fe sm8450-common: overlay: Update CarrierConfig from LA.VENDOR.1.0.r1-15600-WAIPIO.0
+1282b13 sm8450-common: overlay: Update CarrierConfig from LA.VENDOR.1.0.r1-13100-WAIPIO.0
+a0bcbb8 sm8450-common: overlay: Update Wifi overlay from LA.VENDOR.1.0.r1-15600-WAIPIO.0
+cf6b008 sm8450-common: overlay: Checkout Wifi overlays to LA.VENDOR.1.0.r1-13100-WAIPIO.0
+3f7ea5d sm8450-common: overlay: Add _Sys suffixes
+a4957b2 sm8450-common: Import overlays from V13.0.16.0.SLCEUXM
+d89fe9e sm8450-common: Include qcom sepolicy_vndr
+fc30009 sm8450-common: vintf: manifest: Update ims factory hal to 2.1
+a947e15 sm8450-common: vintf: Update IDpmService version to 1.1
+cb2c337 sm8450-common: vintf: IFactory 2.5
+db08946 sm8450-common: vintf: Support diwali, cape and ukee sku
+1f40829 sm8450-common: vintf: Drop tetheroffload.config from manifest
+39a9378 sm8450-common: vintf: Drop ANT
+515030b sm8450-common: vintf: Drop QTI extended fingerprint
+1b25918 sm8450-common: vintf: Drop strongbox and spu
+541c714 sm8450-common: vintf: Add xiaomi manifest additions
+c699492 sm8450-common: vintf: Import qcom manifest_taro
+aef421d sm8450-common: Include common framework compatibility matrices
+9942232 sm8450-common: Import compatibility_matrix from LA.VENDOR.1.0.r1-24300-WAIPIO.QSSI13.0
+b94400d sm8450-common: Import config.fs from LA.VENDOR.1.0.r1-11900-WAIPIO.0
+e4b19a0 sm8450-common: Define Soong namespace
+b18da8f sm8450-common: Configure recovery and import recovery.fstab from LA.VENDOR.1.0.r1-11000-WAIPIO.0
+b6c5d96 sm8450-common: Change vbmeta_system rollback index location
+c043962 sm8450-common: Move GSI AVB keys to /vendor_boot
+3051478 sm8450-common: Simplify AVB flag logic
+4574d0c sm8450-common: Include system_ext in vbmeta system
+6fce06e sm8450-common: avb: Compile recovery image as a chain partition
+e26ffed sm8450-common: Build disabled VBMeta image
+24aa4c1 sm8450-common: Implement virtual A/B
+a518002 sm8450-common: gpt-utils: Add product, system_ext and vendor_dlkm to AB_PTN_LIST
+8696d27 sm8450-common: gpt-utils: Add vbmeta_system to PTN_SWAP_LIST
+4dee922 sm8450-common: gpt-utils: Fix build errors.
+4ca9839 sm8450-common: gpt-utils: Drop unnecessary includes.
+c4670a2 sm8450-common: Add bootctrl and import gpt-utils from LA.VENDOR.1.0.r2-07900-WAIPIO.QSSI13.0
+89e3062 sm8450-common: rootdir: taro:Remove spunvm mount from rc file
+0ee90c2 sm8450-common: rootdir: taro: fix QUIC copyright marking
+9ccc279 sm8450-common: rootdir: Import taro specific scripts from LA.VENDOR.1.0.r1-11000-WAIPIO.0
+
+   * kernel/xiaomi/sm8450
+709c02ad3ad2 input: touchscreen: fts_spi: Don't notify about fod presses when fod_status is off
+
+   * kernel/xiaomi/sm8450-devicetrees
+960abb3c Revert "display: zeus: Set proper framerate for 10 and 1 hz"
+
+====================
+     03-19-2024
+====================
+
+   * device/xiaomi/mayfly
+a784261 mayfly: overlay: Set physical power button location
+
+====================
+     03-18-2024
+====================
+
+   * lineage/hudson
+0d5e983 Regenerate device dependency mappings
+
+====================
+     03-17-2024
+====================
+
+   * device/xiaomi/mayfly
+23ad96f mayfly: overlay: Decommonize brightness overlays
+
+   * external/chromium-webview/prebuilt/arm
+47c88e5 Update Chromium Webview arm prebuilt to 122.0.6261.119
+
+   * external/chromium-webview/prebuilt/arm64
+bdcd39e Update Chromium Webview arm64 prebuilt to 122.0.6261.119
+
+   * external/chromium-webview/prebuilt/x86
+2ad8d36 Update Chromium Webview x86 prebuilt to 122.0.6261.119
+
+   * external/chromium-webview/prebuilt/x86_64
+e3d143e Update Chromium Webview x86_64 prebuilt to 122.0.6261.119
+
+   * lineage/hudson
+88fc8c8 Regenerate device dependency mappings
+
+   * lineage/website
+20c10b4 www: Changelog-28: Fix QS light mode comment
+
+   * vendor/xiaomi/mayfly
+5355f21 mayfly: Import displayconfig to control HBM
+cd885f7 mayfly: Initial import from OS1.0.3.0.ULTCNXM
+
+====================
+     03-16-2024
+====================
+
+   * external/chromium-webview/patches
+d7502a8 Update Chromium Webview to 122.0.6261.119
+
+   * hardware/qcom-caf/common
+b3e4135 Add LOCHIDL 4.3 in Feature Compatibility Matrix
+b315a44 Added vendor.qti.gnss.4.2 to FCM
+
+   * lineage/mirror
+9d0d592 Updated aosp-minimal to 15-Mar-2024 13:01 UTC
+
+   * lineage/scripts
+688b3ab build-webview: Update default webview to 122.0.6261.119
+
+   * lineage/wiki
+f68c3acf devices: deadpool: Android 13 req
+
+====================
+     03-15-2024
+====================
+
+   * device/xiaomi/mayfly
+5a163ee mayfly: Import displayconfig to control HBM
+
+   * kernel/xiaomi/sm8450
+c2f80badca41 ARM64: configs: Add thor config
+1bade6b6a770 misc: hwid: L1A is loki
+c0661c5fcde3 input: touchscreen: xiaomi: Get rid of notify buf spam
+9f0a32e5ddd6 input: touchscreen: goodix_9916: Don't notify about fod presses when fod_status is off
+
+   * kernel/xiaomi/sm8450-devicetrees
+1c9f9512 audio: mayfly: Enable swr haptics
+10b63b78 audio: thor: Disable swr_haptics
+07c98896 display: Bump minimal brightness to 8 for all our devices
+71338bba display: Correct physical panel dimensions for our devices
+a79eac1d display: marble: Update nolp and doze commands from marble V816.0.3.0.UMRMIXM
+8402c4f7 display: marble: Update nolp command from mondrian V816.0.3.0.UMNMIXM
+de70ac92 display: marble: Update from unicorn V816.0.3.0.ULECNXM
+4ee6985e display: marble: Disable 30Hz timing
+5dc0e08b display: marble: Update gamma switch commands from unicorn V816.0.3.0.ULECNXM
+a82ca932 display: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T)
+2573f90e display: mondrian: Add qcom,mdss-dsi-nolp-command-update from mondrian V816.0.3.0.UMNMIXM
+b556f2ce display: mondrian: Commonize lp and local hbm commands for all timings
+6e2de989 display: mondrian: Update from V14.0.5.0.TMNMIXM
+7a367fd7 display: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A)
+74985268 display: mayfly: Drop 90Hz timing
+9b6696ea display: Add support for Xiaomi 12S (mayfly|L3S)
+ef6bbe9e display: zizhan: Update from unicorn V816.0.3.0.ULECNXM
+dbf0c267 display: Add support for Xiaomi MIX Fold 2 (zizhan|L18)
+daa61e51 display: unicorn: Update from unicorn V816.0.3.0.ULECNXM
+619f7ed7 display: Add support for Xiaomi 12S Pro (unicorn|L2S)
+7ca10e09 display: thor: Update from unicorn V816.0.3.0.ULECNXM
+d9976f6c display: Add support for Xiaomi 12S Ultra (thor|L1)
+5542f7ef display: Add miboard id to cape reference board
+296c23a9 display: cape: Enable sde wakup with touch
+e5bb3691 display: cape: Enlarge disp rdump region
+c9273edb display: cupid: Nuke 90Hz timing
+e90e3b3b display: Add support for Xiaomi 12 (cupid|L3)
+463fc06b display: zeus: Set proper framerate for 10 and 1 hz
+bde3f727 display: Add support for Xiaomi 12 Pro (zeus|L1)
+8d7ad3f2 display: Add miboard id to waipio reference board
+0e69aae5 display: waipio: Enable sde wakup with touch
+4b2fd950 display: waipio: Enlarge disp rdump region
+3f141865 display: waipio: Add vci panel regulator
+0a4b1aed camera: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T)
+697fb5ed camera: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A)
+a5d9a6f5 camera: Add support for Xiaomi 12S (mayfly|L3S)
+6329f02f camera: Add support for Xiaomi 12 Ultra (thor|L1)
+8fb0f2c7 camera: Add support for Xiaomi 12S Pro (unicorn|L2S)
+fac85503 camera: Add support for Xiaomi 12 (cupid|L3)
+1e3ba880 camera: Add support for Xiaomi 12 Pro (zeus|L1)
+10a10915 camera: Update iova memory regions for cape
+0c84839d camera: Decommonize active and suspend rst0 from waipio-camera
+ab72b83d camera: Add miboard id to cape, ukee and waipio reference boards
+6fc231d0 audio: Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T)
+891e5766 audio: Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A)
+1294124d audio: Add support for Xiaomi 12S (mayfly|L3S)
+a332ba4e audio: Add support for Xiaomi 12S Ultra (thor|L1)
+d7f787a8 audio: Add support for Xiaomi 12S Pro (unicorn|L2S)
+42214759 audio: Add support for Xiaomi 12 (cupid|L3)
+2cff1ef7 audio: Add support for Xiaomi 12 Pro (zeus|L2)
+28d8beea audio: Add miboard id to cape, ukee and waipio reference boards
+57c1bbe4 audio: Add xiaomi-sm8450-common configuration
+ea504086 Add support for POCO F5/Redmi Note 12 Turbo (marble|M16T)
+a6a849f2 Add xiaomi-sm7475-common configuration
+95e8564e Add support for POCO F5 Pro/Redmi K60 (mondrian|M11A)
+51208bae Add support for Xiaomi 12S (mayfly|L3S)
+66f0afbe Add support for Xiaomi 12S Ultra (thor|L1)
+2b48b025 Add support for Xiaomi 12S Pro (unicorn|L2S)
+3cbf411d Add xiaomi-sm8475-common configuration
+79d2e066 Add support for Xiaomi 12 (cupid|L3)
+ce9398ac Add support for Xiaomi 12 Pro (zeus|L2)
+25f807c7 Add xiaomi-sm8450-common configuration
+365b1f73 waipio: Disable qcom,fsa4480-i2c
+d1f16f12 waipio: Disable qbt handler
+348eea39 waipio: Enable nv-mac
+616b44f5 waipio: Adjust wlan aon and dig config
+1cd1940c waipio: Adjust high bus bandwidth voting data
+2b65f316 waipio: Add rf clk3 clocks to qca6490
+588031f3 waipio: Disable ramoops memory region
+85c087f2 waipio: Enlarge adsp and xbl ramdump memory regions
+16334407 waipio: Disable trust ui and oem vm memory regions
+05676f98 waipio: Disable spss remote processor
+3f96ad31 waipio: Add i2c 0-4 aliases
+3d77e1fe waipio: Remove mem-offline
+ff83fa99 waipio-usb: Remove edu_enable_reg
+6ec643b7 waipio-thermal: Remove {cx,mx}_sdpm
+6fdef0e0 waipio-thermal-overlay: Remove xo-therm
+d72f3ed0 waipio-regulators: Add ldoc11 regulator
+2af61763 waipio-pmic-overlay: Move tof therm to pm8350b
+34e681c3 waipio-pmic-overlay: Decomonize thermal zones
+f822c051 waipio-pmic-overlay: Add pwrkey bark
+dbe02506 waipio-pm8008: Adjust regulator voltages
+28b815cc waipio-pinctrl: Decrease drive strength on tert tdm clk active
+b471152d waipio-pinctrl: Enable pull down on usb3phy portselect default
+9af4cd72 waipio-pinctrl: Add zeus, cupid and thor uart pins
+6803d700 waipio-pcie: Disable pcie1 and pcie1_msi
+39181f63 Add miboard-id to waipio reference boards
+a40db348 pmk8350: Remove xo-therm
+e105fefa pm8350c: Disable qcom,hw-strobe-gpios
+4539fcc7 pm8350b: Disable thermal-sensors for socd
+956fc5f1 pm8350b: Decrease initial resonance period for LRA actuator
+663eb603 pm8350b: Decrease qcom hv-haptics max voltage
+31875fc3 cape: Disable rtc6226
+b999b560 cape: Disable ramoops region
+f3ff12cf cape: Add i2c{0-5} aliases
+9991fffb cape: Disable mem-offline
+998f4c4b cape: Disable spss remote processor
+b5351266 cape-usb: Set maximum-speed to high-speed
+64fab39c cape-usb: Disable USB2 HW LPM for gadget mode
+839ee86b cape-usb: Disable display port
+5a5150cf cape-reserved-memory: Disable trusted ui vm region
+67e3a026 cape-reserved-memory: Enlarge adsp and xbl ramdump regions
+cad47d20 cape-regulators: Add ldoc1, ldoc11 and ldoh4 regulators
+fa04b9c2 cape-pmic-overlay: Add pwrkey bark
+1cb5e866 cape-pmic-overlay: Move tof therm to pm8350b
+7fc3143a cape-pmic-overlay: Decommonize thermal zones
+eb019986 cape-pinctrl: Add thor uart pins
+15151f0c cape-pinctrl: Enable pull down on usb3phy portselect default
+5d1ff18f cape-pinctrl: Enable pull down on tert dtm dout active
+05287cdc Add miboard-id to cape reference boards
+
+   * kernel/xiaomi/sm8450-modules
+758b09c5dd display: mi_disp: Allow partial reads
+242555c91f display: mi_disp: Move fod_ui_ready_state to uapi headers
+
+   * lineage/wiki
+b5350e97 wiki: Add Motorola edge 40 pro / moto X40 / edge+ (2023)
+
+   * vendor/xiaomi/sm8450-common
+f021247 sm8450-common: Add support for thor
+
+====================
+     03-14-2024
+====================
+
+   * lineage/hudson
+d54da98 Listen To Them; They're Dying, rtwo! Curse My Metal Body, I Wasn't Fast Enough!
+
+   * vendor/xiaomi/sm8450-common
+2fdc977 sm8450-common: Disable redir_party_num
+
+====================
+     03-13-2024
+====================
+
+   * kernel/xiaomi/sm8450-devicetrees
+af0f3b4c qcom: Build dtbos inline
+2af1fceb Add 'qcom/video/' from commit 'e714f340cf0f89292e239aa61b4d46bcf8b02d2d'
+29dc3a0f Add 'qcom/mmrm/' from commit 'af7bafc2498b275b824be0fd03d6b3ba94c3da3e'
+52bbfe73 Add 'qcom/eva/' from commit 'a3153273860440c57849947e04d27a6b804f6823'
+ecbff50b Add 'qcom/display/' from commit 'e67350bb03f423f3f243da976f4875c908515cb2'
+43dff211 Add 'qcom/cvp/' from commit '4efcada65dcc99973361f00fa217d505a6b73332'
+45d72fd7 Add 'qcom/camera/' from commit '1d693f07b5936abbca9670e6ced33cd09a11bc71'
+0b70f725 Add 'qcom/audio/' from commit '1577f7c52b9f8ab17097946a6710b0512165ed78'
+a3153273 LA.VENDOR.1.0.r1-23100-WAIPIO.QSSI14.0
+
+   * vendor/xiaomi/sm8450-common
+c787ca3 sm8450-common: Add hotword blobs from cupid V816.0.3.0.ULCEUXM
+
+====================
+     03-12-2024
+====================
+
+   * kernel/xiaomi/sm8450
+7d48f2e60dfc power: supply: qti_battery_charger: Return time to full in seconds
+4b94e446292b power: supply: qti_battery_charger: Return charge counter in uAh
+d99634e46b20 power: supply: qti_battery_charger: Add missing type specifiers
+1a9e3ac11249 power: supply: qti_battery_charger: Add support for 33W reverse wireless charging
+f3cb9d990466 power: supply: qti_battery_charger: Add support for display port
+7b2f64f7e3d6 power: supply: qti_battery_charger: Add config to match m81 module
+da9d65d7d626 power: supply: qti_battery_charger: Replace MI_CHARGE_PROPERTY with MI_WLS_REVERSE_CHG_ONLY
+c4330a4567a1 power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE
+34048701f8e7 power: supply: qti_battery_charger: Update from garnet-t-oss
+767b25eb7937 power: supply: qti_battery_charger: Import xiaomi changes
+251df3c54268 Revert "power: supply: qti_battery_charger: Import xiaomi changes"
+145d64879692 Revert "power: supply: qti_battery_charger: Add missing type specifiers"
+d7bba7e99af5 Revert "Revert "power: supply: qti_battery_charger: Add dynamic uusb detection""
+6fe6715daeaa Revert "Revert "power: qti_typec_class: Add typec class support for micro USB""
+77d6eb5df3af Revert "Revert "power: supply: qti_battery_charger: Add extcon support""
+262f162ec98d Revert "power: supply: qti_battery_charger: Return charge counter in uAh"
+ab2d0d72523a Revert "power: supply: qti_battery_charger: Return time to full in seconds"
+53e8ef8f8f17 Revert "power: supply: xiaomi: Support WIRELESS_REVERSE_CLOSE"
+58bbdb142fe5 Revert "Revert "Revert "power: supply: qti_battery_charger: Add extcon support"""
+cfaf154469b1 Revert "Revert "Revert "power: qti_typec_class: Add typec class support for micro USB"""
+73a3068d2d58 Revert "Revert "Revert "power: supply: qti_battery_charger: Add dynamic uusb detection"""
+
+   * vendor/lineage
+2a348e8e repopick: Use `number` instead of `id` for error msgs
+
